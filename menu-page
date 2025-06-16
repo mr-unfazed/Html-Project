@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu - Foodie's Delight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 0;
+            background-color: #fff;
+        }
+        header, footer {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            background-color: #e5533c;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .food-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            background-color: #fff;
+        }
+        .food-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .food-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .food-info {
+            padding: 15px;
+        }
+        .food-info h3 {
+            margin: 0 0 10px;
+            color: #ff6347;
+        }
+        .food-info p {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Foodie's Delight - Menu</h1>
+    </header>
+
+    <nav>
+        <a href="home-page.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="grid">
+            <div class="food-item">
+                <img src="pizza.jpg" alt="Margherita Pizza" />
+                <div class="food-info">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza topped with fresh mozzarella, basil, and tomato sauce.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="cheeseburger.jpg" alt="Cheeseburger" />
+                <div class="food-info">
+                    <h3>Cheeseburger</h3>
+                    <p>Juicy beef patty with cheddar cheese, lettuce, tomato, and special sauce.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="cesarsalad.jpg" alt="Caesar Salad" />
+                <div class="food-info">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce with creamy Caesar dressing, croutons, and parmesan.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="spaghetti.jpg" alt="Spaghetti Bolognese" />
+                <div class="food-info">
+                    <h3>Spaghetti Bolognese</h3>
+                    <p>Rich meat sauce served over perfectly cooked spaghetti noodles.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="salmon.jpg" alt="Grilled Salmon" />
+                <div class="food-info">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh salmon fillet grilled to perfection, served with lemon butter sauce.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="cake.jpg" alt="Chocolate Cake" />
+                <div class="food-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>Decadent and moist chocolate cake topped with rich chocolate frosting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Foodie's Delight</p>
+    </footer>
+</body>
+</html>
